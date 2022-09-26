@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 
 const NavBar = (props) =>
 {
@@ -28,5 +29,17 @@ const NavBar = (props) =>
         </nav>
     )
 }
+
+NavBar.propTypes = {
+    title:PropTypes.string,
+    about:PropTypes.string,
+    aboutLink:PropTypes.string,
+}
+
+NavBar.defaultProps = {
+    title: "Home",
+    about: "About",
+}
+
 
 export default NavBar
